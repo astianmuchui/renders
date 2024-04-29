@@ -102,6 +102,95 @@ body
                 box-sizing: border-box;
                 padding: 2% 0;
 
+                .prompt-container
+                {
+                    width: 80%;
+                    height: 80%;
+                    background-color: transparent;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    padding: 1%;
+        
+        
+                    .query
+                    {
+                        background-color: darken($primary-color, 10);
+                        border-radius: inherit;
+                        width: 100%;
+                        height: 50px;
+                        display: inline-flex;
+                        padding-bottom: 1%;
+        
+                        img
+                        {
+                            height: 70%;
+                            margin-top: 0.7%;
+                            margin-left: 1%;
+                        }
+        
+                        .u
+                        {
+                            background-color: lighten($primary-color, 20);
+                            height: 90%;
+                            width: 50px;
+                            @extend .flex-column;
+                            margin-top: 0.7% ;
+                            margin-left: 0.5%;
+                            border-radius: inherit;
+        
+                        }
+        
+                        p
+                        {
+                            margin-top: 0.9% ;
+                            margin-left: 2%;
+                        }
+                    }
+        
+        
+                    .response
+                    {
+                        background-color: darken($primary-color, 10);
+                        border-radius: inherit;
+                        width: 100%;
+                        min-height: 80%;
+                        display: inline-flex;
+                        margin-top: 1%;
+                        overflow-y: auto;
+                        padding: 1%;
+                        img
+                        {
+                            height: 40px;
+                            margin-top: 0.7%;
+                            margin-left: 1%;
+                        }
+        
+                        .u
+                        {
+                            background-color: lighten($primary-color, 20);
+                            height: 70%;
+                            width: 50px;
+                            @extend .flex-column;
+                            margin-top: 0.7% ;
+                            margin-left: 0.5%;
+                            border-radius: inherit;
+        
+                        }
+        
+                        p
+                        {
+                            margin-top: 0.9% ;
+                            margin-left: 2%;
+                            opacity: 0;
+                            animation: fadeIn 1s forwards ease-in;
+                            animation-delay: 2.5s;
+                            word-spacing: 4px;
+                            line-height: 2rem;
+                            font-size: 15px;
+                        }
+                    }
+                }
+        
                 h1, span
                 {
                         text-transform: none;
